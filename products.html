@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Products | Ritik Roy Creations</title><meta name="description" content="Browse Ritik Roy Creations product catalogue."><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="top"><span>Wholesale • Custom • Bulk Orders</span><span>Call / WhatsApp: <a href="tel:8750483724">8750483724</a></span></div>
+<header><a class="brand" href="index.html"><span>R</span> RITIK ROY <small>CREATIONS</small></a><button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="nav"><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="index.html#categories">Categories</a><a href="index.html#about">About</a><a href="contact.html">Contact</a><a class="navbtn" href="https://wa.me/918750483724?text=Hello%20Ritik%20Roy,%20I%20need%20a%20quotation." target="_blank">Get Quote</a></nav></header>
+
+<section class="page-hero"><span class="eyebrow">FULL CATALOGUE</span><h1>Everything in one place.</h1><p>Browse products by category, search by name, sort the catalogue and open any product for a detailed enquiry.</p></section>
+
+<section class="section">
+<div class="catalog-toolbar">
+  <div class="searchbox">⌕ <input id="search" placeholder="Search products, e.g. mouse pad, mug, heat press..." oninput="renderCatalogue()"></div>
+  <select id="sort" onchange="renderCatalogue()"><option value="default">Sort: Featured</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option></select>
+</div>
+<div class="catalog-layout">
+<aside class="sidebar">
+  <h3>Categories</h3>
+  <button class="sidecat active" data-cat="all" onclick="setCat('all')">All Products <span>24</span></button>
+  <button class="sidecat" data-cat="Mouse & Desk" onclick="setCat('Mouse & Desk')">Mouse & Desk <span>5</span></button>
+  <button class="sidecat" data-cat="Leather" onclick="setCat('Leather')">Leather <span>4</span></button>
+  <button class="sidecat" data-cat="Sublimation" onclick="setCat('Sublimation')">Sublimation <span>5</span></button>
+  <button class="sidecat" data-cat="Machines" onclick="setCat('Machines')">Machines <span>9</span></button>
+  <button class="sidecat" data-cat="Supplies" onclick="setCat('Supplies')">Supplies <span>1</span></button>
+  <div class="side-note"><b>Need a bulk quote?</b><p>Send product name + quantity on WhatsApp.</p><a href="https://wa.me/918750483724" target="_blank">Chat now →</a></div>
+</aside>
+<main><div class="resultbar"><span id="count">24 products</span><button class="viewbtn" onclick="toggleView()">▦ Grid / ☰ List</button></div><div id="catalogue" class="product-grid catalogue"></div></main>
+</div>
+</section>
+<footer><div class="footer-main"><div><a class="brand inverse" href="index.html"><span>R</span> RITIK ROY <small>CREATIONS</small></a><p>Custom products, promotional solutions & printing equipment.</p></div><div><h4>Explore</h4><a href="products.html">All Products</a><a href="index.html#categories">Categories</a><a href="index.html#why">Why Us</a></div><div><h4>Contact</h4><a href="tel:8750483724">8750483724</a><a href="https://wa.me/918750483724" target="_blank">WhatsApp</a></div></div><div class="copyright">© 2026 Ritik Roy. All rights reserved.</div></footer>
+<a class="float-wa" href="https://wa.me/918750483724" target="_blank">WA</a><script src="script.js"></script></body></html>
